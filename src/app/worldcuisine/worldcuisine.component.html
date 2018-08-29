@@ -4,9 +4,9 @@
     <section class="spacer"></section>
 </section>
 
-<section class="section has-background-light">
+<section class="section eat-here">
     <div class="container">
-        <section class="section has-background-light">
+        <section class="section ">
             <div class="container">
                 <div class="columns">
                     <div class="column">
@@ -125,7 +125,7 @@
     <section class="spacer"></section>
 </section>
 
-<section class="section eat-today" [hidden]="hideWhatToCook">
+<section class="section  eat-now" [hidden]="hideWhatToCook">
     <div class="container">
         <section class="section ">
             <div class="container">
@@ -251,11 +251,11 @@
         <div class='carousel carousel-animated carousel-animate-slide' data-size="3">
             <div class='carousel-container' [hidden]="hideMainIngredient">
                 <div class='carousel-item is-active'>
-                    <div class="notification is-info">
+                    <div class="notification is-danger is-bold">
                         <nav class="level">
                             <div class="level-item has-text-centered">
                                 <figure class="image is-64x64">
-                                        <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                        <img class="is-rounded" src="src/app/worldcuisine/images/chicken.jpg">
                                     </figure>
                             </div>
                         </nav>
@@ -263,11 +263,11 @@
                     </div>
                 </div>
                 <div class='carousel-item' (click)="toggleRecipes()">
-                    <div class="notification is-info">
+                    <div class="notification is-warning is-bold">
                         <nav class="level">
                             <div class="level-item has-text-centered">
                                 <figure class="image is-64x64">
-                                        <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                        <img class="is-rounded" src="src/app/worldcuisine/images/pasta.jpg">
                                 </figure>
                             </div>
                         </nav>
@@ -275,7 +275,19 @@
                     </div>
                 </div>
                 <div class='carousel-item'>
-                    <div class="notification is-info">
+                    <div class="notification is-primary is-bold">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/worldcuisine/images/cheese.jpg">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-success is-bold">
                         <nav class="level">
                             <div class="level-item has-text-centered">
                                 <figure class="image is-64x64">
@@ -283,7 +295,7 @@
                                 </figure>
                             </div>
                         </nav>
-                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
+                        <h1 class="is-size-4 has-text-centered">Eggs</h1>
                     </div>
                 </div>
                 <div class='carousel-item'>
@@ -295,11 +307,11 @@
                                 </figure>
                             </div>
                         </nav>
-                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
+                        <h1 class="is-size-4 has-text-centered">Cucumber</h1>
                     </div>
                 </div>
                 <div class='carousel-item'>
-                    <div class="notification is-info">
+                    <div class="notification is-warning">
                         <nav class="level">
                             <div class="level-item has-text-centered">
                                 <figure class="image is-64x64">
@@ -307,11 +319,11 @@
                                 </figure>
                             </div>
                         </nav>
-                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
+                        <h1 class="is-size-4 has-text-centered">Tomato</h1>
                     </div>
                 </div>
                 <div class='carousel-item'>
-                    <div class="notification is-info">
+                    <div class="notification is-primary">
                         <nav class="level">
                             <div class="level-item has-text-centered">
                                 <figure class="image is-64x64">
@@ -319,19 +331,7 @@
                                 </figure>
                             </div>
                         </nav>
-                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
-                    </div>
-                </div>
-                <div class='carousel-item'>
-                    <div class="notification is-info">
-                        <nav class="level">
-                            <div class="level-item has-text-centered">
-                                <figure class="image is-64x64">
-                                    <img class="is-rounded" src="src/app/images/breakfast.jpg">
-                                </figure>
-                            </div>
-                        </nav>
-                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
+                        <h1 class="is-size-4 has-text-centered">Potato</h1>
                     </div>
                 </div>
             </div>

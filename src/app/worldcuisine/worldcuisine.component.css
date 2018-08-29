@@ -1,13 +1,20 @@
 .is-camo{
-    background: rgb(245, 245, 245, 0.5)
+    background: rgb(245, 245, 245, .8)
 }
 
 .is-camo:hover { 
-    background-color: rgba(228, 235, 135, 0.466);
+    background-color: rgba(228, 235, 135, 1);
     cursor: pointer;
 }
 
 .is-camo:active { 
     background-color: rgb(158, 214, 54);
     cursor: pointer;
+}
+
+.eat-here{
+    background: white url("images/table.jpg") center / cover;
+}
+.eat-now{
+    background: white url("images/cooking.jpg") center / cover;
 }
