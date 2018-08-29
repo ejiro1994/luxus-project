@@ -1,0 +1,12 @@
+.eat-today{
+    background: white url("src/app/images/hero.jpg") center / cover;
+}
+
+.is-camo{
+    background: rgb(245, 245, 245, 0.5)
+}
+
+.is-camo:hover { 
+    background-color: rgba(217, 255, 0, 0.466);
+    cursor: pointer;
+}

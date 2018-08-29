@@ -1,20 +1,85 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="navbar is-fixed-top ">
+    <div class="navbar-brand">
+        <a href="" class="navbar-item">
+            <img src="src/app/images/luxus-logo.png" alt="luxus logo">
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <div class="navbar-item is-tab">Recipes</div>
+            <div class="navbar-item is-tab">Seasonal</div>
+            <div class="navbar-item is-tab">Blog</div>
+            <div class="navbar-item is-tab">Contact</div>
+            <div class="navbar-item is-tab">Search</div>
+        </div>
+    </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<section class="hero is-primary is-fullheight header-background">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1 is-capitalized">
+                It is time to unlock your <br> creativity<br>
+                <hr style="width: 25%; margin-top: 1em; margin-bottom: 1em">
+            </h1>
+            <h2 class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Enim voluptatibus neque id officia nulla magni,
+                atque odit <br> placeat repellendus ullam sint eius suscipit harum obcaecati <br> animi tempora labore explicabo
+                earum.
+            </h2>
 
+        </div>
+    </div>
+
+</section>
+
+<section class="spacer"></section>
+
+<section>
+    <div class="level">
+        <div class="level-item  ">
+            <p class="subtitle">Browse by:</p>
+        </div>
+        <div class="level-item">
+            <div class="select is-danger is-rounded is-medium is-fullwidth">
+
+                <select class="multiple" (change)="navigateTo($event.target.value)">
+                    <option value="all">All</option>
+                    <option value="mealtype">Meal Type</option>
+                    <option value="">Ingredients</option>
+                    <option value="worldcuisine">World Cuisine</option>
+                    <option value="">Cooking Style</option>
+                </select>
+            </div>
+        </div>
+        <div class="level-item"></div>
+    </div>
+</section>
+
+<section class="spacer"></section>
+
+<router-outlet></router-outlet>
+
+<section class="spacer"></section>
+
+
+<footer class="footer is-info">
+
+    <div class="columns">
+        <div class="column is-one-quarter">
+            <figure class="image is-128x128">
+                <img src="src/app/images/luxus-logo.png" alt="">
+            </figure>
+        </div>
+        <div class="column" style="text-align: center">
+            Results through design and technology<br>
+            <strong>Luxus</strong> Demo by Ejiro Lennox Akpoduado
+        </div>
+        <div class="column" style="text-align: right">
+            <i class="fa fa-facebook-official" aria-hidden="true" style="padding-right: 1em"></i>
+            <i class="fa fa-twitter" aria-hidden="true" style="padding-right: 1em"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true" style="padding-right: 1em"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true" style="padding-right: 1em"></i>
+        </div>
+    </div>
+
+</footer>

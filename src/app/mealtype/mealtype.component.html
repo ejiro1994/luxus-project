@@ -1,0 +1,368 @@
+<!-- .section -->
+<section class="has-text-centered hero is-primary is-bold">
+    <section class="spacer"></section>
+    <p class="title">What do you want to eat today?</p>
+    <section class="spacer"></section>
+</section>
+<section class="section eat-today">
+    <div class="container">
+        <section class="section ">
+            <div class="container">           
+                <div class="columns">
+                    <div class="column">
+                        <div class="box is-camo">
+                            <nav class="level">
+                                <div class="level-item has-text-centered">
+                                    <figure class="image is-128x128">
+                                        <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                    </figure>
+                                </div>
+                            </nav>
+                            <h1 class="title is-size-4 has-text-centered">Breakfast & Brunch</h1>
+                            <p class="is-size-5 has-text-centered">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis distinctio, praesentium veniam eius modi vitae,
+                                mollitia exercitationem cupiditate, odit fugit totam quo omnis quisquam nam nesciunt cumque
+                                excepturi! Saepe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box is-camo">
+                            <nav class="level">
+                                <div class="level-item has-text-centered">
+                                    <figure class="image is-128x128 ">
+                                        <img class="is-rounded" src="src/app/images/appetiser.jpg">
+                                    </figure>
+                                </div>
+                            </nav>
+                            <h1 class="title is-size-4 has-text-centered">Appetizers & Snacks</h1>
+                            <p class="is-size-5 has-text-centered">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis distinctio, praesentium veniam eius modi vitae,
+                                mollitia exercitationem cupiditate, odit fugit totam quo omnis quisquam nam nesciunt cumque
+                                excepturi! Saepe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column" (click)="toggleLunchAndSalads()">
+                            <div class="box is-camo">
+                                <nav class="level">
+                                    <div class="level-item has-text-centered">
+                                        <figure class="image is-128x128 ">
+                                            <img class="is-rounded" src="src/app/images/salad.jpg">
+                                        </figure>
+                                    </div>
+                                </nav>
+                                <h1 class="title is-size-4 has-text-centered">Lunch & Salads</h1>
+                                <p class="is-size-5 has-text-centered">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis distinctio, praesentium veniam eius modi vitae,
+                                    mollitia exercitationem cupiditate, odit fugit totam quo omnis quisquam nam nesciunt cumque
+                                    excepturi! Saepe.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <div class="columns">
+                        <div class="column">
+                                <div class="box is-camo ">
+                                    <nav class="level">
+                                        <div class="level-item has-text-centered">
+                                            <figure class="image is-128x128 ">
+                                                <img class="is-rounded" src="src/app/images/dinner.jpg">
+                                            </figure>
+                                        </div>
+                                    </nav>
+                                    <h1 class="title is-size-4 has-text-centered">Dinner</h1>
+                                    <p class="is-size-5 has-text-centered">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis distinctio, praesentium veniam eius modi vitae,
+                                        mollitia exercitationem cupiditate, odit fugit totam quo omnis quisquam nam nesciunt cumque
+                                        excepturi! Saepe.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                    <div class="box is-camo">
+                                        <nav class="level">
+                                            <div class="level-item has-text-centered">
+                                                <figure class="image is-128x128 ">
+                                                    <img class="is-rounded" src="src/app/images/dessert.jpg">
+                                                </figure>
+                                            </div>
+                                        </nav>
+                                        <h1 class="title is-size-4 has-text-centered">Dessert</h1>
+                                        <p class="is-size-5 has-text-centered">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis distinctio, praesentium veniam eius modi vitae,
+                                            mollitia exercitationem cupiditate, odit fugit totam quo omnis quisquam nam nesciunt cumque
+                                            excepturi! Saepe.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                        <div class="box is-camo">
+                                            <nav class="level">
+                                                <div class="level-item has-text-centered">
+                                                    <figure class="image is-128x128 ">
+                                                        <img class="is-rounded" src="src/app/images/drinks.jpg">
+                                                    </figure>
+                                                </div>
+                                            </nav>
+                                            <h1 class="title is-size-4 has-text-centered">Drinks & Smoothies</h1>
+                                            <p class="is-size-5 has-text-centered">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis distinctio, praesentium veniam eius modi vitae,
+                                                mollitia exercitationem cupiditate, odit fugit totam quo omnis quisquam nam nesciunt cumque
+                                                excepturi! Saepe.
+                                            </p>
+                                        </div>
+                                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="has-text-centered hero is-warning is-bold" [hidden]=hideLunchAndSalads>
+        <section class="spacer"></section>
+        <p class="title">What would you like as your main ingredient?</p>
+        <section class="spacer"></section>
+    </section>
+<section class="section">
+    <div class="container">
+        <div class='carousel carousel-animated carousel-animate-slide' data-size="3">
+            <div class='carousel-container' [hidden]=hideLunchAndSalads>
+                
+                <div class='carousel-item is-active' (click)="toggleRecipes()">
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/shrimp.png">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Shrimp</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/cheese.png">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Cheese</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/beans.png">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Beans</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Lemons</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Tomatoes</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Potatoes</h1>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class="notification is-info">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="src/app/images/breakfast.jpg">
+                                </figure>
+                            </div>
+                        </nav>
+                        <h1 class="is-size-4 has-text-centered">Cucumber</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-navigation is-centered" [hidden]=hideLunchAndSalads>
+                <div class="carousel-nav-left">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-nav-right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section has-background-dark is-bold" [hidden]="hideRecipes">
+    <div class="level has-background-dark is-bold">
+        <div class="container ">
+            <div class="columns ">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by3">
+                                <img src="src/app/images/shrimp1.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <span class="tag is-info">
+                                Recipe
+                            </span>
+                            <div class="card-header-title">
+                                Smoky maple pork belly
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card ">
+                        <div class="card-image">
+                            <figure class="image is-3by3">
+                                <img src="src/app/images/shrimp2.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <span class="tag is-info">
+                                    Recipe
+                            </span>
+                            <div class="card-header-title">
+                                Smoky maple pork belly
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by3">
+                                <img src="src/app/images/shrimp3.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <span class="tag is-info">
+                                Recipe
+                            </span>
+                            <div class="card-header-title">
+                                Smoky maple pork belly
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="level has-background-dark is-bold">
+            <div class="container ">
+                <div class="columns ">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-3by3">
+                                    <img src="src/app/images/shrimp4.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <span class="tag is-info">
+                                    Recipe
+                                </span>
+                                <div class="card-header-title">
+                                    Smoky maple pork belly
+                                </div>
+    
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card ">
+                            <div class="card-image">
+                                <figure class="image is-3by3">
+                                    <img src="src/app/images/shrimp5.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <span class="tag is-info">
+                                    Recipe
+                                </span>
+                                <div class="card-header-title">
+                                    Smoky maple pork belly
+                                </div>
+    
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-3by3">
+                                    <img src="src/app/images/shrimp6.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <span class="tag is-info">
+                                    Recipe
+                                </span>
+                                <div class="card-header-title">
+                                    Smoky maple pork belly
+                                </div>
+    
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+</section>

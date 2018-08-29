@@ -1,0 +1,13 @@
+.is-camo{
+    background: rgb(245, 245, 245, 0.5)
+}
+
+.is-camo:hover { 
+    background-color: rgba(228, 235, 135, 0.466);
+    cursor: pointer;
+}
+
+.is-camo:active { 
+    background-color: rgb(158, 214, 54);
+    cursor: pointer;
+}

@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+@keyframes slideIn {
+    0% {
+        width: 80px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+*/
+
+.header-background {
+    background: black url("src/app/images/chinh-le-duc-718789-unsplash.jpg") center / cover;
+
+    /* 
+    width: 80px;
+    height: 100px;
+    -webkit-transition-property: width, height; 
+    -webkit-transition-duration: 3s; 
+    transition-property: width, height;
+    transition-duration: 3s; 
+    animation: 2.5s ease-out 1s 1 slideIn;
+    */
+}
+
+.header-background:hover {
+    width: 100%;
+}
+
+.spacer {
+    padding: 2.5em;
+}
+
+.navbar {
+    background: rgb(255, 255, 255, 1) !important;
+}
+
+[hidden] { display: none !important;}
