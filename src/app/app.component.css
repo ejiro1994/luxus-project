@@ -1,1 +1,12 @@
 
+.header-background {
+    background: black url("images/chinh-le-duc-718789-unsplash.jpg") center / cover;
+}
+
+.header-background:hover {
+    width: 100%;
+}
+
+.navbar {
+    background: rgb(255, 255, 255, 1) !important;
+}
